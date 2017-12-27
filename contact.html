@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="row row-margin">
+  <div class="col-md-4 col-margin-bottom">
+    <div class="text text-center">
+      {{ site.data.var.contact | newline_to_br | markdownify }}
+    </div>
+  </div>
+  <div class="col-md-4 col-margin-bottom">
+    <img src="img/kon_back.jpg" style="width:100%">
+  </div>
+  <div class="col-md-4">
+    <div class="text text-name text text-center">
+      <p><strong>{{ site.data.var.cover_name }}</strong></p>
+      <p><small>{{ site.data.var.cover_caption | newline_to_br }}</small></p>
+      <p>&nbsp;</p>
+      <p>Fon: {{ site.data.var.fon }}</p>
+      <p>Fax: {{ site.data.var.fax }}</p>
+      <p>&nbsp;</p>
+      <p><a href="mailto:{{ site.data.var.email }}">{{ site.data.var.email }}</a></p>
+    </div>
+  </div>
+</div>

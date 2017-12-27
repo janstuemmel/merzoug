@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<div class="row row-margin">
+  <div class="col-md-4"></div>
+  <div class="col-md-8">
+    <div class="text text-center">
+      {{ site.data.var.opener | newline_to_br | markdownify }}
+    </div>
+  </div>
+</div>
+
+<div class="row row-margin">
+  <div class="col-md-4 col-margin-bottom">
+    <div class="text text-name text text-center">
+      <p><strong>{{ site.data.var.cover_name }}</strong></p>
+      <p><small>{{ site.data.var.cover_caption | newline_to_br }}</small></p>
+    </div>
+  </div>
+  <div class="col-md-8">
+    <img src="img/anemonie.jpg" style="width:100%">
+  </div>
+</div>
+
+<div class="row row-margin">
+  <div class="col-md-4 text text-contact">Fax: {{ site.data.var.fax }}</div>
+  <div class="col-md-4 text text-contact">Fon: {{ site.data.var.fon }}</div>
+  <div class="col-md-4 text text-contact">
+    <a href="mailto:{{ site.data.var.email }}">{{ site.data.var.email }}</a>
+  </div>
+</div>
+
+<div class="row row-margin">
+  <div class="col-md-12">
+    <div class="speeches-header">Vorträge und Workshops:</div>
+    <ul class="speeches">
+      {% for speech in site.data.speeches %}
+      <li class="speeches-item">
+        <div class="speeches-item-header">
+          <strong>{{ speech.kind }}</strong>&nbsp;-&nbsp;{{ speech.title }}
+        </div>
+        <div class="speeches-item-content">
+          {{ speech.date }}, {{ speech.location }}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

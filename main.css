@@ -1,0 +1,92 @@
+body {
+  background: #cccc99;
+}
+
+a { text-decoration: none; color: #000 }
+a:hover { text-decoration: underline; color: #000 }
+a:active { text-decoration: none; color: #000 }
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 800px;
+  background: url(img/gemsegart.gif) no-repeat right top;
+}
+
+.navigation-item {
+  font-family: 'Montserrat', sans-serif;
+  display: inline;
+  margin-left: 20px;
+  font-size: 22px;
+}
+
+.logo {
+  background: url(img/logo.jpg) no-repeat center center;
+  background-size: contain;
+  width: 200px;
+  height: 238px;
+}
+
+.text {
+  font-size: 18px;
+}
+
+.text strong {
+  color: #8F917A;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-name p {
+  margin:0;
+}
+
+.text-contact {
+  text-align: center
+}
+
+.row-margin {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.col-margin-bottom {
+  margin-bottom: 40px;
+}
+
+.speeches-header {
+  font-size: 22px;
+}
+
+.speeches-item-header {
+  font-size: 18px;
+}
+
+.speeches-item-content {
+  font-size: 16px;
+}
+
+.projects-description {
+  font-size: 16px;
+}
+
+.projects-images {
+  padding: 0px 10px 0px 10px;
+}
+
+.projects-images img {
+  width: 100%;
+  border: 1px solid #000;
+  margin-bottom: 10px;
+}
+
+.projects-quote-left {
+  text-align: left;
+  color: #59593d;
+}
+
+.projects-quote-right {
+  color: #59593d;
+  text-align: right;
+}
