@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+
+{% for project in site.projekte %}
+<div class="row row-margin projects">
+  <div class="col-md-5 text text-center projects-description">
+    <div class="projects-quote-left"><i class="fa fa-1x fa-quote-left" aria-hidden="true"></i></div>
+    {{ project.output }}
+    <div class="projects-quote-right"><i class="fa fa-1x fa-quote-right" aria-hidden="true"></i></div>
+  </div>
+  <div class="col-md-7 projects-images">
+    {% for image in project.images %}
+      <img src="{{ image }}">
+    {% endfor %}
+  </div>
+</div>
+{% endfor %}

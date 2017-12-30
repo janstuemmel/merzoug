@@ -1,0 +1,9 @@
+collections:
+  - projekte
+
+# defaults:
+#   - scope:
+#       path: ""
+#       type: projekte
+#     values:
+#       layout: default
