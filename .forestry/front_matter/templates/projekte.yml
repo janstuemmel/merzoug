@@ -1,4 +1,6 @@
 ---
+pages:
+- _projekte/2-md.md
 hide_body: false
 fields:
 - type: image_gallery
