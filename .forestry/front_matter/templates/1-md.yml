@@ -1,0 +1,13 @@
+---
+hide_body: false
+fields:
+- name: images
+  label: Images
+  type: image_gallery
+  hidden: false
+  default: ''
+- name: date
+  label: Date
+  type: datetime
+  hidden: false
+  default: ''
