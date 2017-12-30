@@ -1,7 +1,7 @@
 ---
 pages:
 - _projekte/2-md.md
-hide_body: false
+hide_body: true
 fields:
 - type: image_gallery
   label: Bilder
