@@ -1,5 +1,6 @@
 collections:
-  - projekte
+  projekte:
+    output: true
 
 # defaults:
 #   - scope:
