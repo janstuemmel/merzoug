@@ -1,8 +1,10 @@
 ---
-pages:
-- _projekte/2-md.md
+label: Projekte
 hide_body: true
+is_partial: false
 fields:
 - type: image_gallery
   label: Bilder
   name: images
+pages:
+- _projekte/2-md.md

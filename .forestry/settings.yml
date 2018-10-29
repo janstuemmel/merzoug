@@ -1,9 +1,27 @@
 ---
-upload_path: "/img"
-frontmatter_file_url_template: "/img"
-body_file_url_template: "/img"
 new_page_extension: md
 auto_deploy: false
 admin_path: 
 webhook_url: 
-collections: 
+sections:
+- type: jekyll-pages
+  label: Pages
+  create: all
+- type: directory
+  path: _projekte
+  label: Projekte
+  create: all
+  match: "**/*"
+- type: jekyll-posts
+  label: Posts
+  create: all
+- type: directory
+  path: _data
+  label: Data
+  create: none
+  match: "**/*.{json,yaml,yml}"
+upload_dir: img
+public_path: "/img"
+front_matter_path: "/img"
+use_front_matter_path: false
+file_template: ":filename:"
